@@ -12,7 +12,7 @@ body {
     background-color: black;
     color: white;
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 
 #result {
@@ -21,11 +21,13 @@ body {
     height: 100px;
     resize: none;
     border: none;
-    padding: 0;
+    padding: 20px 0;
     margin: 0;
     background-color: black;
     color: white;
     font-size: 50px;
+    text-align: right;
+    box-sizing: border-box;
 }
 
 .btn {
