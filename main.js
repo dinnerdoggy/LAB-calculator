@@ -24,7 +24,11 @@ const btnArrow = document.querySelector(".btnArrow");
 btnEquals.addEventListener("click", function() {
   let equation = result.innerHTML;
   let answer = eval(equation);
-  resultField.innerHTML = answer;
+  if (answer.toFixed(5).endsWith(00000)) {
+    resultField.innerHTML = answer;
+  } else {
+    resultField.innerHTML = answer.toFixed(5);
+  }
 })
 btnC.addEventListener("click", function() {
   resultField.innerHTML = null;
