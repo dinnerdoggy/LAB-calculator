@@ -9,7 +9,7 @@ const btn2 = document.querySelector(".btn2");
 
 //button actions
 btnC.addEventListener("click", function() {
-  resultField.innerHTML = 0;
+  resultField.innerHTML = null;
 })
 btn0.addEventListener("click", function() {
   resultField.innerHTML += 0;
