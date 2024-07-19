@@ -15,8 +15,12 @@ const btn6 = document.querySelector(".btn6");
 const btn7 = document.querySelector(".btn7");
 const btn8 = document.querySelector(".btn8");
 const btn9 = document.querySelector(".btn9");
+const btnMinus = document.querySelector(".btnMinus");
+const btnx = document.querySelector(".btnx");
+const btnDivide = document.querySelector(".btnDivide");
+const btnArrow = document.querySelector(".btnArrow");
 
-//button actions
+//button actions - operators/clear/backspace
 btnEquals.addEventListener("click", function() {
   let equation = result.innerHTML;
   let answer = eval(equation);
@@ -25,9 +29,25 @@ btnEquals.addEventListener("click", function() {
 btnC.addEventListener("click", function() {
   resultField.innerHTML = null;
 })
+btnArrow.addEventListener("click", function() {
+  resultField.innerHTML = resultField.innerHTML.substring(
+    0, resultField.innerHTML.length -1
+  )
+})
 btnPlus.addEventListener("click", function() {
   resultField.innerHTML += " + ";
 })
+btnMinus.addEventListener("click", function() {
+  resultField.innerHTML += " - ";
+})
+btnx.addEventListener("click", function() {
+  resultField.innerHTML += " * ";
+})
+btnDivide.addEventListener("click", function() {
+  resultField.innerHTML += " / ";
+})
+
+//button actions - numbers
 btn0.addEventListener("click", function() {
   resultField.innerHTML += 0;
 })
