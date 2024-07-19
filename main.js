@@ -5,6 +5,7 @@ const resultField = document.querySelector("#result")
 const btnC = document.querySelector(".btnC");
 const btnPlus = document.querySelector(".btnPlus");
 const btnEquals = document.querySelector(".btnE");
+const btnDec = document.querySelector(".btnDec");
 const btn0 = document.querySelector(".btn0");
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector(".btn2");
@@ -54,6 +55,9 @@ btnDivide.addEventListener("click", function() {
 //button actions - numbers
 btn0.addEventListener("click", function() {
   resultField.innerHTML += 0;
+})
+btnDec.addEventListener("click", function() {
+  resultField.innerHTML += ".";
 })
 btn1.addEventListener("click", function() {
   resultField.innerHTML += 1;
